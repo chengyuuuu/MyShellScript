@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source ./assert/print.sh
+source ./assert/load/print.sh
 
 printG "检查用户身份..."
 if [ $(whoami) != 'root' ]; then

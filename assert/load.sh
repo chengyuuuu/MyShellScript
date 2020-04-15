@@ -1,6 +1,6 @@
 #!/bin/bash
 
-all = ls ./assert/*.sh
+all=$(ls ./assert/load/*.sh)
 
 for item in ${all}
 do

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source ./assert/print.sh
+source ./assert/load/print.sh
 
 function check_rely()
 {

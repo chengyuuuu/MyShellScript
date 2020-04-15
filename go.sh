@@ -1,7 +1,6 @@
 #!/bin/bash
 
-source ./assert/*.sh 
-source ./assert/is_root.sh
+source ./assert/load.sh 
 
 choose='0'
 echo -e "\

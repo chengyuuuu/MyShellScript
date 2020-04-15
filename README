@@ -1,0 +1,6 @@
+assert文件夹存放提示类函数
+config文件夹存放配置类脚本
+install文件夹存放软件安装脚本
+install/package文件夹存放软件包
+
+go.sh脚本用于启动安装或配置脚本

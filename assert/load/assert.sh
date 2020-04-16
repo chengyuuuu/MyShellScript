@@ -6,8 +6,7 @@ source ./assert/load/print.sh
 function assert() 
 {
 	if [ ${1} -ne 0 ]; then
-	    printR "\033[32m $* \033[0m"
-		exit 1
+		failed ${*}
 	fi
 }
 

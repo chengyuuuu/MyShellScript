@@ -17,3 +17,10 @@ function printY()
 {
 	echo -e "\033[33m $* \033[0m"
 }
+
+#带退出功能的printR
+function failed()
+{
+	printR ${*}
+	exit 1
+}

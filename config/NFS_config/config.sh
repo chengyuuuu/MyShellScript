@@ -1,4 +1,3 @@
-
 #!/bin/bash
 
 config_dir="./config/NFS_config/config"

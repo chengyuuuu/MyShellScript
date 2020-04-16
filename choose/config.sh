@@ -23,6 +23,5 @@ do
     assert ${?} "找不到${array[i]}/config.sh"
 done
 
-unset choose num config_list array
 
 

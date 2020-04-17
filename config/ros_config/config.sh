@@ -16,9 +16,8 @@ apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BAD
 assert ${?} "添加密钥失败"
 
 printG "安装ROS"
-apt update
-apt-get install -y ros-melodic-desktop-full
-assert ${?} "安装ROS失败"
+apt-get update
+apt-get install -y python-rosdep2 ros-melodic-desktop-full 
 
 printG "初始化rosdep"
 rosdep init
@@ -33,4 +32,7 @@ assert ${?} "设置环境变量失败"
 
 printG "安装rosinstall"
 apt install -y python-rosinstall python-rosinstall-generator python-wstool build-essential
+
+chown cheng /home/${username}/.ros
+chgrp cheng /home/${username}/.ros
 
